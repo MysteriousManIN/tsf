@@ -4,6 +4,11 @@ main > section{
     padding:64px 128px;
 }
 
+.section-1 {
+    min-height: calc(100vh - 64px);
+    box-sizing: border-box;
+}
+
 .section-1 > h1{
     margin:0;
 	width:fit-content;
