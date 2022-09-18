@@ -2,7 +2,7 @@
 
 $(()=>{
 
-	// const API_BASE = "https://fontfamilies.000webhostapp.com/tsf/bbs/api/";
+	const API_BASE = "https://fontfamilies.000webhostapp.com/tsf/bbs";
 
 	const _fetch = async (url, fd) => { return await (await fetch(url, { method: "post", body: fd })).json(); };
 
@@ -11,7 +11,7 @@ $(()=>{
 		const fd = new FormData();
 		fd.append("query", JSON.stringify({ id: id, options: options }));
 
-		return await _fetch("../api/customer.php", fd);
+		return await _fetch(API_BASE + "/api/customer.php", fd);
 
 	};
 
@@ -20,7 +20,7 @@ $(()=>{
 		const fd = new FormData();
 		fd.append("query", JSON.stringify({ id: id }));
 
-		return await _fetch("../api/transaction.php", fd);
+		return await _fetch(API_BASE + "/api/transaction.php", fd);
 
 	};
 
@@ -29,7 +29,7 @@ $(()=>{
 		const fd = new FormData();
 		fd.append("query", JSON.stringify({ sid: sid, rid: rid, amount: amount }));
 
-		return await _fetch("../api/transfer-money.php", fd);
+		return await _fetch(API_BASE + "/api/transfer-money.php", fd);
 
 	};
 
@@ -42,7 +42,7 @@ $(()=>{
 	Object.freeze($.bbs);
 
 	$("#website-name").on("click", ()=>{
-        window.location.assign("https://typefaces.com/bbs/");
+//         window.location.assign("https://typefaces.herokuapp.com/bbs/");
     });
 
 });
