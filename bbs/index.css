@@ -1,0 +1,47 @@
+@import "main.css";
+
+main > section{
+    padding:64px 128px;
+}
+
+.section-1{
+    height:100vh;
+    box-sizing:border-box;
+}
+
+.section-1 > h1{
+    margin:0;
+    width:fit-content;
+    font-size:var(--hs_0);
+    font-weight:400;
+}
+
+.div-0{
+    height:calc(100% - 41px);
+    display:flex;
+    flex-direction:column;
+    justify-content:center;
+    align-items:flex-start;
+    gap:64px;
+    box-sizing: border-box;
+}
+
+.tagline{
+    margin:0;
+    width:16ch;
+    font-size:var(--hght_4);
+}
+
+
+@media screen and (min-width:320px) and (max-width:480px){
+  
+    main > section{
+        padding:64px 32px;
+    }
+
+    .tagline{
+        width:8ch;
+        font-size:var(--hght_2);
+    }
+    
+}

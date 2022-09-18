@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=1, user-scalable=0" >
+    <title>bbs. - id</title>
+    <link rel="stylesheet" href="index.css" >
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js" defer ></script>
+    <script src="https://cdn.com/google/google_jquery.min.js" defer ></script>
+    <script src="../main.js" defer ></script>
+    <script src="index.js" defer ></script>
+</head>
+<body>
+
+    <main>
+
+        <section class="section-1">
+
+            <h1 id="website-name" >bbs.</h1>
+    
+            <div class="div-0">
+                <span>All customers</span>
+            </div>
+
+            <div id="cust-basic-details" class="cust-basic-details" hidden >
+                <h2></h2>
+                <div></div>
+            </div>
+    
+            <div id="cust-transaction-details" class="cust-transaction-details" hidden >
+                <h3>Transaction records</h3>
+                <div id="transaction-table" class="table_1" >
+                    <div>
+                        <span>ID</span>
+                        <span>Name</span>
+                        <span>Amount</span>
+                    </div>
+                    <div></div>
+                </div>
+            </div>
+    
+        </section>
+    
+        <section id="create-transaction-box" class="create-transaction-box" >
+    
+            <form id="transaction-form" class="transaction-form" >
+                <h3>Transaction</h3>
+                <div class="input-box" >
+                    <input id="t-id" name="tid" type="text" placeholder="e.g., CUST0000" spellcheck="false" list="t-ids" />
+                    <label for="t-id" >ID</label>
+                    <span></span>
+                </div>
+                <div class="input-box" >
+                    <input id="t-amount" name="tamount" type="text" placeholder="e.g., 0.0" spellcheck="false" />
+                    <label for="t-amount" >Amount</label>
+                    <span></span>
+                </div>
+                <div>
+                    <button class="btn-p" type="submit" >Transfer money</button>
+                </div>
+                <button id="transaction-form-close-btn" class="btn-t" type="button" >&times;</button>
+            </form>
+    
+            <datalist id="t-ids" ></datalist>
+    
+        </section>
+
+    </main>
+
+    <footer>
+        <div>
+            <div><a class="remixicon_os20" icon="github" ></a></div>
+            <div class="dacy" >
+                <span>Designed & Coded by</span>
+                <span>Chetan Saini</span>
+            </div>
+        </div>
+    </footer>
+
+</body>
+</html>
